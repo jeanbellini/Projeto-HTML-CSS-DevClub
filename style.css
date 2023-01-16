@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-left{
+    margin-top: 381px;
+    margin-left: 136px;
+}
+
+.titulo {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    color: #5D5D7D;
+    width: 368px;
+    height: 160px;
+    margin-bottom: 15px;
+}
+
+.texto {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: rgb(93, 93, 125, 0.5);
+    width: 540px;
+    height: 144px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    border: none;
+    width: 269px;
+    height: 62px;
+    border-radius: 25px;
+    background: #9499EA;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.container-right {
+   background: rgb(93, 93, 125, 0.16)
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 41px;
+    margin-top: 24px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.imagem1 {
+   position: relative;
+   left: -142px;
+   top: 215px;
+}
+ 
+@media(max-width: 376px) {
+    .container{
+        grid-template-columns: 1fr;
+        
+    }
+    .container-left {
+        display: grid;
+        gap: 15px;
+        justify-content: center;
+        margin: 0;
+    
+    }
+    .nav{
+        display: none;
+    }
+    .titulo {
+        font-size: 36px;
+        line-height: 52px;
+        text-align: center;
+        width: 268px;
+        height: 104px;
+        margin-top: 58px;
+    }
+    .texto {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        width: 268px;
+        height: auto;
+    }
+    .btn {
+        margin-bottom: 46px;
+    }
+    .container-right {
+        width: 375px;
+    }
+    .imagem1 {
+        width: 271px;
+        height: 322px;
+        display: block;
+        left: 0;
+        top: 0;
+        margin: auto;
+        margin-top: 71.5px;
+        margin-bottom: 56px;
+        
+    }
+}
